@@ -1,7 +1,7 @@
 
 var contentful = require('contentful');
 
-module.exports = function (context, req) {
+module.exports = async function (context, req) {
     try {
         let contentfulClient = contentful.createClient({
             accessToken: process.env["CDAPI_KEY"],
