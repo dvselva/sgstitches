@@ -1,5 +1,6 @@
 
 var contentful = require('contentful');
+
 module.exports = function (context, req) {
     try {
         let contentfulClient = contentful.createClient({
@@ -13,13 +14,7 @@ module.exports = function (context, req) {
           })
             .then(function (entries) {
             // console.log (JSON.stringify(entries.items));
-          
             context.res.status(200).json(entries.items);
-            // context.res = {
-            //     headers: { 'Content-Type': 'application/json' },
-            //     body: {'results':entries.items,'name0':'Selvakumar' },
-            //     status:200
-            // }
             context.done();
             })
         }
