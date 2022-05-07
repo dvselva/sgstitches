@@ -15,8 +15,9 @@ module.exports = function (context, req) {
             .then(function (entries) {
             // console.log (JSON.stringify(entries.items));
             context.res.status(200).json(entries.items);
-            context.done();
+            // context.done();
             })
+
         }
     catch (error) {
         context.res.status(500).send(error);
