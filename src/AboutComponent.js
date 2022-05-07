@@ -22,7 +22,7 @@ function AboutComponent() {
 
   async function fetchAbout() {
     try {
-      let response = await fetch('/api/getdata?type=about');
+      let response = await fetch(`/api/getdata?type=about`);
       let data = await response.json();
       setItems(data);
       setLoading(false);
