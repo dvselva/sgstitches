@@ -1,7 +1,7 @@
 
 var contentful = require('contentful');
 
-module.exports = async function (context, req) {
+module.exports = function (context, req) {
     try {
         let contentfulClient = contentful.createClient({
             accessToken: process.env["CDAPI_KEY"],
@@ -13,13 +13,14 @@ module.exports = async function (context, req) {
             content_type: PLAYER_CONTENT_TYPE_ID
           })
             .then(function (entries) {
-            // console.log (JSON.stringify(entries.items));
             context.res.status(200).json(entries.items);
-            // context.done();
-            })
+            context.done();
+           })
 
         }
     catch (error) {
         context.res.status(500).send(error);
+        context.done();
     }
+    context.done();
 }
