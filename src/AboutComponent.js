@@ -34,24 +34,6 @@ function AboutComponent() {
   }
 
 
-  // const fetchAbout = async () => {
-    
-  //   console.log ("access key:" + process.env.CDKEY)
-  //   let contentfulClient = contentful.createClient({
-  //     accessToken: process.env.REACT_APP_CDKEY,
-  //     space: '9gf6mhyw2bkx'
-  //   });
-  //   let PLAYER_CONTENT_TYPE_ID = 'yesgeAbout';
-
-  //   contentfulClient.getEntries({
-  //     content_type: PLAYER_CONTENT_TYPE_ID
-  //   })
-  //     .then(function (entries) {
-  //       setItems(entries.items);
-  //       setLoading(false);
-  //     })
-  // }
-
   const getContents = () => {
     const contentsArray = []
     items.forEach((item, index) => {
