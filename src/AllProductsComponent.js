@@ -112,7 +112,7 @@ function AllProductsComponent(props) {
           console.log("error");
         }
         columnsArray.push(<div className="row mt-3">
-          <a  onClick={() => handleShow(imageUrl,entry.fields.name)}  >
+          <a href="#" onClick={() => handleShow(imageUrl,entry.fields.name)}  >
             <div className="col-md-12" >
               <div className="card" >
                 <img src={imageUrl} className="card-img-top" alt="..." />
@@ -170,7 +170,7 @@ function AllProductsComponent(props) {
       }
 
       contentsArray.push(
-        <a onClick={() => handleShow(imageUrl,item.fields.name)}>
+        <a href="#" onClick={() => handleShow(imageUrl,item.fields.name)}>
           <div className="col-md-12 mt-3" >
             <div class="card" >
               <img src={imageUrl} className="card-img-top" alt="..." />
