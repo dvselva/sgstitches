@@ -72,7 +72,7 @@ function FAQsComponent() {
 
     })
 
-    return <div><div className="header-style">Frequently Asked Questions</div> <Accordion>{contentsArray}</Accordion></div>;
+    return <div><div className="header-style">Frequently Asked Questions</div> <Accordion className='mt-5'>{contentsArray}</Accordion></div>;
   }
   const renderOptions = {
     renderNode: {
