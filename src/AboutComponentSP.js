@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Image from 'react-bootstrap/Image'
+// import Image from 'react-bootstrap/Image'
 // import * as contentful from 'contentful';
 // import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 // import { BLOCKS, INLINES } from "@contentful/rich-text-types";
