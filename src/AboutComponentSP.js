@@ -38,13 +38,15 @@ function AboutComponentSP() {
   const getContents = () => {
     const contentsArray = []
     items.forEach((item, index) => {
+      if (item.Title && item.Description)
+      {
       console.log(item.Title);
       contentsArray.push(<Row style={{ marginTop: "20px", marginBottom: "20px" }}>
         <Col md={12}>
           {parse(item.Description)}
         </Col>
       </Row>)
-
+      }
     })
 
     //  return <div><div className="header-style">About Us</div>{contentsArray}</div>;
