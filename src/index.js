@@ -10,6 +10,7 @@ import {
   Route,
 } from "react-router-dom";
 import AboutComponent from './AboutComponent';
+import AboutComponentSP from './AboutComponentSP';
 import ServicesComponent from './ServicesComponent';
 import NavbarComponent from './NavbarComponent';
 import ContactsComponent from './ContactsComponent';
@@ -25,6 +26,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="about" element={<AboutComponent />} />
+        <Route path="aboutsp" element={<AboutComponentSP />} />
         <Route path="services" element={<ServicesComponent />} />
         <Route path="contactus" element={<ContactsComponent />} />
         <Route path="allsamples" element={<AllProductsComponent mode="all"  title="All Samples"/>} />
