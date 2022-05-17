@@ -24,7 +24,7 @@ function AboutComponentSP() {
   async function fetchAbout() {
     try {
       
-      let response = await fetch(`https://pnpsp.azurewebsites.net/api/spget?restur=/_api/web/lists/GetByTitle('About')/items?$select=Id,Title,Description&siteurl=https://cellleo.sharepoint.com/sites/sgstitches`);
+      let response = await fetch("https://pnpsp.azurewebsites.net/api/spget?resturl=/_api/web/lists/GetByTitle('About')/items?$select=Id,Title,Description&siteurl=https://cellleo.sharepoint.com/sites/sgstitches");
       let data = await response.json();
       setItems(data);
       setLoading(false);
